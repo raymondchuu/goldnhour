@@ -1,0 +1,18 @@
+.services-container {
+    width: 80%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.product-container {
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+
+
+.book-button {
+    padding: 3% 20%;
+    background-color: lightgray;
+    cursor: pointer;
+}

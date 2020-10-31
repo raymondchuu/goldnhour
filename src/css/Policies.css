@@ -1,0 +1,50 @@
+.policies-header {
+    width: 100%;
+    height: 60vh;
+    background-image: url('../Media/Policies/policies-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.policies-container {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.policy-title {
+    font-size: 24px;
+}
+
+.policy-body {
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+.policy-right {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 5%;
+}
+
+ul {
+    list-style: none;
+  }
+  
+.policy-ul li::before {
+    content: "\2022";
+    color: #B5603F;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.policies-link {
+    text-decoration: underline;
+    color: black;
+}
+
+.policies-link a:hover {
+    text-decoration: none;
+}

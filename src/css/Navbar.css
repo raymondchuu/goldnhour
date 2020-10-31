@@ -1,0 +1,124 @@
+.navbar {
+    top: 0;
+    left: 0;
+    height: 88px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+    background-color: #FFF;
+}
+
+.logo {
+    font-size: 20px;
+}
+
+.navbar figure {
+    margin-inline-start: 10vw;
+    margin-bottom: 0;
+}
+
+.navbar figure p {
+    margin-bottom: 0;
+}
+
+.navbar ul {
+    display: flex;
+    margin-inline-end: 10vw;
+}
+
+.navbar ul li{
+    list-style-type: none;
+    padding-top: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.navbar ul li a {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropdown-basic-button {
+    text-decoration: none;
+    background-color: #FFF;
+    color: black;
+    border: none;
+    display: flex;
+    padding: 0;
+}
+
+#dropdown-basic-button:focus {
+    box-shadow: none;
+}
+
+#dropdown-basic-button:active {
+    box-shadow: none;
+}
+
+.dropdown-toggle:after { 
+    content: none 
+}
+
+/* Hover Dropdown Btn */
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 120px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown:hover .dropdown-content  {
+    display: block;
+    padding-top: 20px;
+}
+
+.dropdown:hover .service-btn {
+    border-bottom: 1px solid #AE3B15;
+    color: #AE3B15;
+}
+
+.navbar nav ul a:hover {
+    color: #AE3B15;
+    border-bottom: 1px solid #AE3B15;
+}
+
+.toggle {
+    display: inline-flex;
+    margin-inline-start: 14%;
+    padding-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navigation ul li {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .toggle {
+        display: none;
+    }
+}

@@ -1,0 +1,165 @@
+.footer-container {
+    width: 100%;
+    height: 60vh;
+    display: block;
+}
+
+.footer-content {
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+.footer-title {
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.footer-title p {
+    font-weight: bold;
+}
+
+.footer-information {
+    height: 40vh;
+}
+
+.column-1 {
+    float: left;
+    width: 33%;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.column-2 {
+    float: left;
+    width: 33%;
+    height: 100px;
+    margin-top: 25px;
+    padding-left: 10%;
+}
+
+.column-3 {
+    float: left;
+    width: 33%;
+    height: 100px;
+    margin-top: 25px;
+    padding-left: 15%;
+}
+
+.footer-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.copyright {
+    display: block;
+    margin: auto;
+    width: 80%
+}
+
+.footer-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.book-btn {
+font-size: 24px;
+display:inline-block;
+padding:0.5em 3.5em;
+border:2px solid #fff;
+margin:0 5px 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration: none;
+font-weight:bold;
+color:white;
+text-align:center;
+transition: all 0.3s;
+background-color: #C47C4F;
+white-space: nowrap;
+border: double;
+cursor: pointer;
+}
+
+.book-btn:hover {
+background-color: #A45334;
+color: white;
+text-decoration: none;
+}
+
+.policies-link {
+    text-decoration: none;
+}
+
+.policies-link:hover {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.instagram {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: all ease;
+}
+
+.instagram:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+
+}
+
+.email {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.email:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 21px
+}
+
+.email p:hover {
+    border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-information {
+        height: 700px;
+    }
+
+    .column-1 {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 250px;
+    }
+
+    .column-2 {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 200px;
+        padding: 0;
+    }
+
+    .column-3 {
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .book-btn {
+        width: 100%;
+        margin: auto;
+        padding: 0.5em 3.0em;
+    }
+}
