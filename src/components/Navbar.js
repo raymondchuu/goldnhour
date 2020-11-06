@@ -8,8 +8,9 @@ import Book from './Book';
 import ToggleButton from './HomePage/ToggleButton';
 import Sidebar from './HomePage/Sidebar';
 import Backdrop from './HomePage/Backdrop';
+import Footer from './Footer';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-
+import Preloader from './Preloader';
 const Navbar = (props) => {
 
     const [toggle, setToggle] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = (props) => {
             <Sidebar show={toggle} setshow={handleBackdrop}/>
             {toggle ? <Backdrop click={handleBackdrop}/> : ""}
         <div className="navbar">
-            <figure className="logo" href="/">
+            <figure className="logo">
                 <p>GoldnHour</p>
             </figure>
             <nav className="navigation">
@@ -36,9 +37,9 @@ const Navbar = (props) => {
                 </div>
 
                 <ul>
-                    <li><a href='/' style={window.location.pathname == '/' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>HOME</a></li>
+                    <li><a href='/home' style={window.location.pathname == '/home' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>HOME</a></li>
                     <div className="dropdown">
-                    <li><a href="#" className="service-btn" style={(window.location.pathname == '/services/brows' || window.location.pathname == '/services/lashes') ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>SERVICES</a></li>
+                        <li><a href="" className="service-btn" style={(window.location.pathname == '/services/brows' || window.location.pathname == '/services/lashes') ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>SERVICES</a></li>
                         <div className="dropdown-content">
                             <li><a href='/services/brows' style={window.location.pathname == '/services/brows' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>BROWS</a></li>
                             <li><a href='/services/lashes' style={window.location.pathname == '/services/lashes' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>LASHES</a></li>
@@ -52,18 +53,31 @@ const Navbar = (props) => {
         <Switch>
             <Route path="/book">
                 <Book />
+                <Footer />
+
             </Route>
             <Route path="/policies">
                 <Policies />
+                <Footer />
+
             </Route>
             <Route path="/services/lashes">
                 <Lashes />
+                <Footer />
+
             </Route>
             <Route path="/services/brows">
                 <Brows />
+                <Footer />
+
+            </Route>
+            <Route path="/home">
+                <Homepage />
+                <Footer />
+
             </Route>
             <Route path="/">
-                <Homepage />
+                <Preloader />
             </Route>
         </Switch>
         </Router>

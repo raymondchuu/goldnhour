@@ -4,7 +4,7 @@ import '../css/Book.css';
 
 const Book = () => {
     return (
-        <div>
+        <div className="outer-container">
             <div className="book-header">
                 {/*background image*/}
             </div>

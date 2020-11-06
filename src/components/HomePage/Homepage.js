@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './Header';
 import About from './About';
 import DisplayImages from './Displayimages';
-import ImageCarousel from './ImageCarousel';
 import '../../css/Homepage.css';
 
-const Homepage = () => {
+const Homepage = (props) => {
+
     return (
-        <div>
-            <Header />
+        <div style={{backgroundColor: '#E5E5E5'}}>
             <div className="homepage-container">
                 <About />
                 <DisplayImages />

@@ -2,6 +2,11 @@
     width: 100%;
     height: 60vh;
     display: block;
+    background-color: #FFF;
+}
+
+p {
+    color: #292929;
 }
 
 .footer-content {
@@ -13,7 +18,7 @@
 .footer-title {
     display: flex;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 10px;
 }
 
@@ -110,7 +115,7 @@ text-decoration: none;
 .instagram:hover {
     text-decoration: none;
     color: black;
-    font-size: 21px;
+    border-bottom: 1px solid black;
 
 }
 
@@ -123,7 +128,7 @@ text-decoration: none;
 .email:hover {
     text-decoration: none;
     color: black;
-    font-size: 21px
+    border-bottom: 1px solid black;
 }
 
 .email p:hover {

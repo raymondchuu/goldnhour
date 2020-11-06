@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'STD_Avenir';
+  src: url('./Media/AvenirLTStd-Book.ttf') format('truetype');
+}
+
 .App {
-  text-align: center;
+  font-family: 'STD_Avenir';
 }
 
 .App-logo {

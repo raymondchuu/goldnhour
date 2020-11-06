@@ -3,10 +3,13 @@
     height: 90vh;
     background-color: #FFF;
     margin-bottom: 3%;
-    margin-top: 3%;
+    margin-top: 5%;
+    background-color: #E5E5E5;
+    padding-top: 5%;
+
 }
 
-.title {
+.about-title {
     font-size: 32px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -69,7 +72,7 @@
     }
 
     .about {
-        margin-bottom: 700px;
+        margin-bottom: 1000px;
     }
 
     .about {

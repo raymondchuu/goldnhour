@@ -23,6 +23,7 @@ const LashServices = [
         d2: '1 hour',
         d3: '70 mins - 80 mins max',
         d4: '40 mins',
+        even: true
     },
     {
         image: image2,
@@ -41,6 +42,7 @@ const LashServices = [
         d2: '2 hours',
         d3: '2.5 hours',
         d4: '1 hour',
+        even: false
     },    
     {
         image: image3,
@@ -59,6 +61,7 @@ const LashServices = [
         d2: '2 hours',
         d3: '2.5 hours',
         d4: '1 hour',
+        even: true
     },
 
 ]
@@ -66,23 +69,27 @@ const LashServices = [
 const Lashes = () => {
     return (
         <div>
-            <div className="front-image">
-                {/*front-image */}
-            </div>
-            <div className="container">
-                <div className="blurb">
-                    <p className="lash-title">EYELASH EXTENSIONS</p>
-                    <div className="lash-div">{/*divider*/}</div>
-                    <p className="lash-desc">All refills require at least 40% of lashes remaining for it to be considered a fill. It is recommended every 2-4 weeks, anything more than 4 weeks is considered a fullset. There will be a clean up and removal of grown out lashes, followed by reapplying natural lashes with new lash extensions.
-                    </p>
-                    <p className="lash-warning">
-                        I DO NOT FILL ON LASHES DONE BY ANOTHER LASH TECH.
-                    </p>
+            <div className="block-1">
+                <div className="front-image">
+                    {/*front-image */}
                 </div>
+                <div className="container">
+                    <div className="blurb">
+                        <p className="lash-title">EYELASH EXTENSIONS</p>
+                        <div className="lash-div">{/*divider*/}</div>
+                        <p className="lash-desc">All refills require at least 40% of lashes remaining for it to be considered a fill. It is recommended every 2-4 weeks, anything more than 4 weeks is considered a fullset. There will be a clean up and removal of grown out lashes, followed by reapplying natural lashes with new lash extensions.
+                        </p>
+                        <p className="lash-warning">
+                            I DO NOT FILL ON LASHES DONE BY ANOTHER LASH TECH.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
                 <div>
                     {LashServices.map((product) => (
-                        <div className="product-container">
+                        <div className={product.even ? "product-container" : "product-container-even"}>
+                            <div className="sub-block">
                             <div className="left-column-services">
                                 <div>
                                     <img className="product-image" src={product.image} />
@@ -121,9 +128,12 @@ const Lashes = () => {
                                     </table>
                                 </div>                     
                             </div>
+                            </div>
                         </div>
                     ))}
-                    <div className="product-container">
+
+                    <div className="product-container" style={{backgroundColor: '#E5E5E5'}}>
+                        <div className="sub-block">
                         <div className="left-column-services"> 
                             <div>
                                 <img src={image4} className="product-image" />
@@ -154,14 +164,15 @@ const Lashes = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lashes-booking">
-                        <p className="lash-title">READY TO BOOK?</p>
-                        <div className="lash-div">{/*divider*/}</div>
-                        <p className="lash-desc">For all services, you can book using the link below.</p>
-                        <a className="lashes-book-btn" href="https://goldnhour.as.me/schedule.php" target="_blank">Book Now</a>
+                    
                     </div>
-                </div>
-            </div>
+                        <div className="lashes-booking">
+                            <p className="lash-title">READY TO BOOK?</p>
+                            <div className="lash-div">{/*divider*/}</div>
+                            <p className="lash-desc">For all services, you can book using the link below.</p>
+                            <a className="lashes-book-btn" href="https://goldnhour.as.me/schedule.php" target="_blank">Book Now</a>
+                        </div>
+                    </div>
         </div>
     )
 }

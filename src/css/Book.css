@@ -68,11 +68,21 @@
     padding-bottom: 15px;
 }
 
+.outer-container {
+    width: 100%;
+    background-color: #E5E5E5;
+    height: 170vh;
+}
+
 @media only screen and (max-width: 1000px) {
     .book-container {
-        height: 900px;
+        height: 1200px;
     }
 
+    .outer-container {
+        height: 200vh;
+    }
+    
     .book-left-col {
         display: block;
         margin: auto;

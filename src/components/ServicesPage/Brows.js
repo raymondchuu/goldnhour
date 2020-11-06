@@ -17,7 +17,8 @@ const Brows = () => {
                     <div className="lash-div">{/*divider*/}</div>  
                 </div>
 
-                <div className="brows-products">
+                <div className="brows-products-grey">
+                    <div className="brows-subblock">
                     <div className="left-column-services">
                         <div>
                             <img src={image1} className="product-image" />
@@ -40,8 +41,11 @@ const Brows = () => {
                             </table>
                         </div>
                     </div>
+                    </div>
                 </div>
+
                 <div className="brows-products">
+                    <div className="brows-subblock">
                     <div className="left-column-services">
                         <div>
                             <img src={image2} className="product-image" />
@@ -84,28 +88,34 @@ const Brows = () => {
                             </table>
                         </div>
                     </div>
-                </div>
-                <div className="brows-products">
-                    <div className="left-column-services">
-                        <div>
-                            <img src={image3} className="product-image" />
-                        </div>
                     </div>
-                    <div className="right-column-services">
-                        <div className="inner-div">
-                            <p className="lash-title">PERMANENT BROWS</p>
-                            <p className="coming-soon">COMING SOON</p>
+                </div>
+
+                <div className="brows-products-grey">
+                    <div className="brows-subblock">
+                        <div className="left-column-services">
+                            <div>
+                                <img src={image3} className="product-image" />
+                            </div>
+                        </div>
+
+                        <div className="right-column-services">
+                            <div className="inner-div">
+                                <p className="lash-title">PERMANENT BROWS</p>
+                                <p className="coming-soon">COMING SOON</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="lashes-booking">
+                <div className="brows-booking">
                     <p className="lash-title">READY TO BOOK?</p>
                     <div className="lash-div">{/*divider*/}</div>
-                    <p className="lash-desc">For all services, you can book using the link below.</p>
-                    <a className="lashes-book-btn" href="https://goldnhour.as.me/schedule.php" target="_blank">Book Now</a>
+                        <p className="lash-desc">For all services, you can book using the link below.</p>
+                        <a className="lashes-book-btn" href="https://goldnhour.as.me/schedule.php" target="_blank">Book Now</a>
+                    </div>
                 </div>
-            </div>
+            
         </div>
     )
 }

@@ -23,9 +23,9 @@ const Footer = () => {
                     </div>
                     <div className="column-3">
                         <p className="footer-subtitle">CONTACT</p>
-                        <a href="https://www.instagram.com/goldnhour.ca/" className="instagram"><IoLogoInstagram style={{height: '30px', width: '30px', marginRight: '20px'}}/>GOLDNHOUR</a>
+                        <IoLogoInstagram style={{height: '30px', width: '30px', marginRight: '20px'}}/><a href="https://www.instagram.com/goldnhour.ca/" className="instagram">GOLDNHOUR</a>
                         <br/><br/>
-                        <a href="mailto:Goldnhourwaitlist@gmail.com" className="email"><IoMdMail style={{height: '30px', width: '30px', marginRight: '20px'}} />EMAIL</a>
+                        <IoMdMail style={{height: '30px', width: '30px', marginRight: '20px'}} /><a href="mailto:Goldnhourwaitlist@gmail.com" className="email">EMAIL</a>
                     </div>
                 </div>
             </div>

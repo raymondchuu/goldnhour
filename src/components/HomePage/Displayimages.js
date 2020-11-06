@@ -7,7 +7,7 @@ import '../../css/Displayimages.css';
 //const access_token = 'IGQVJYNC13aEVyTkxEcGptWngyX3pTYlVwbnhTMnc5aDNpUHpjdkRweGt6VmFjMmtGRVdWbkIza2RVNkJWdXRNdUx4Sm80cGtDY2t5YnVleWZA1Y1psLWxjUF9iLUlmalktZAFRZAcS1uTUFnWlJUTy1obwZDZD'
 
 //GoldnHour
-const access_token = 'IGQVJWS0R1czhXcHZADVHJDLVk2TEVBanVBLUpTWTVtMVBQMzR4eWJ1ekw2TThST1lHU000Y1VMZAml5UmhUbGNPS3JGMXlteXVJNmI3bDN1cV9CaEVodExjOFcyMHpYZAWl0U3RlQ2VEWkFzMDkwVlpOdQZDZD'
+const access_token = 'IGQVJVTTR0bWxEcE1Takt5dHFLblR6OExzdV94OWR6TENRYlBtVWt0SXp3emtVLVJfb3ktallNWWNXYnNxZAHJLQVdMZAGRFY0lfbWhFRkFEOERPWTA2WGh0SVNuOFFUcjJaRkRCYktqZAS0yazZAUYWozYgZDZD'
 
 class DisplayImages extends React.Component {
     constructor(props) {
@@ -83,7 +83,9 @@ class DisplayImages extends React.Component {
     render() {
         return(
             <div className="display-images">
-                <p className="title"><IoLogoInstagram style={{height: '35px', width: '30px', paddingBottom: '5px'}} /> GOLDNHOUR.CA</p>
+                <div style={{marginTop: '50px', marginBottom: '25px'}}>
+                    <IoLogoInstagram style={{height: '35px', width: '30px', paddingBottom: '5px', paddingRight: '5px'}} /><a href="https://www.instagram.com/goldnhour.ca/" className="title">goldenhour.ca</a>
+                </div>
                 <div className="row-1">
                     {//<img src={this.state.imgsrc} style={{height: '330px', width: '25%'}} />}
                     }

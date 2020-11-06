@@ -2,7 +2,7 @@ import React from 'react';
 import headerImage from '../../Media/Homepage/front-page.png';
 import storyImage from '../../Media/Homepage/our-story.png';
 import video from '../../Media/home-video.mp4';
-import arrow from '../../Media/Homepage/down-arrow.svg';
+import arrow from '../../Media/Homepage/down-arrow.png';
 import '../../css/Header.css';
 
 const Header = () => {
@@ -11,11 +11,10 @@ const Header = () => {
             <video autoPlay muted loop className="header-video">
                 <source src={video} type="video/mp4" />
             </video>
-            <div style={{border: '1px solid red', top: '-100px', position: 'absolute', zIndex: 5}}>
-            <img src={arrow} style={{color: 'red', zIndex: 5}} />
-            <p>Hello?</p>
-
+            <div style={{ top: '110vh', position: 'absolute', zIndex: 5, margin: 'auto', width: '100%'}}>
+                <img src={arrow} />
             </div>
+            <div id="homebtn"></div>
         </div>
     )
 }
