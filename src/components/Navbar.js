@@ -9,6 +9,9 @@ import ToggleButton from './HomePage/ToggleButton';
 import Sidebar from './HomePage/Sidebar';
 import Backdrop from './HomePage/Backdrop';
 import Footer from './Footer';
+import Testimonials from './Testimonials';
+import logo from '../Media/Homepage/logo.svg';
+import { ReactComponent as ReactLogo } from '../Media/logo2.svg';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import Preloader from './Preloader';
 const Navbar = (props) => {
@@ -28,8 +31,8 @@ const Navbar = (props) => {
             <Sidebar show={toggle} setshow={handleBackdrop}/>
             {toggle ? <Backdrop click={handleBackdrop}/> : ""}
         <div className="navbar">
-            <figure className="logo">
-                <p>GoldnHour</p>
+            <figure className="logo"> 
+                <img src={logo} />
             </figure>
             <nav className="navigation">
                 <div className="toggle">
@@ -51,10 +54,13 @@ const Navbar = (props) => {
             </nav>
         </div>
         <Switch>
+            <Route path="/testimonials">
+                <Testimonials />
+                <Footer />
+            </Route>
             <Route path="/book">
                 <Book />
                 <Footer />
-
             </Route>
             <Route path="/policies">
                 <Policies />

@@ -112,7 +112,7 @@ nav {
 .toggle {
     display: inline-flex;
     margin-inline-start: 14%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 @media only screen and (max-width: 1000px) {

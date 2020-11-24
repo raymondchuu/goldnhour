@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import video from '../Media/home-video.mp4';
 import {Redirect} from "react-router-dom";
+import { ReactComponent as ReactLogo } from '../Media/Homepage/logo.svg';
 import '../css/Header.css';
 
 const Preloader = (props) => {
@@ -13,8 +14,8 @@ const Preloader = (props) => {
         return (
             <div style={{overflowY: 'hidden'}}>
                 <div className="app-bar">
-                    <figure className="app-logo" >
-                        GoldnHour
+                    <figure className="logo" >
+                        <ReactLogo />
                     </figure>
                 </div>
                 <div className="header-image">

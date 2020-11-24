@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactComponent as ReactLogo } from '../Media/logo2.svg';
 import {IoLogoInstagram, IoMdMail} from 'react-icons/io';
 
 import '../css/Footer.css';
@@ -8,13 +9,15 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-content">
                 <div className="footer-title">
-                    <p className="title">GOLDN HOUR</p>
+                    <p className="title"><a href='/home'><ReactLogo/></a></p>
                 </div>
                 <div className="footer-information">
                     <div className="column-1">
                         <p className="footer-subtitle">OUR MISSION</p>
                         <p>GOLDN HOUR is a beauty studio that creates opportunities for those to express their most authentic self by enhancing their natural beauty through the golden experience. </p>
                         <a href="/policies" className="policies-link">See our policies here.</a>
+                        <br/>
+                        <a href="/testimonials" className="policies-link">Testimonials</a>
                     </div>
                     <div className="column-2">
                         <p className="footer-subtitle">BOOK ONLINE</p>
