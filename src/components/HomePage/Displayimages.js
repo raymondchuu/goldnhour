@@ -93,17 +93,19 @@ class DisplayImages extends React.Component {
                         if (url.media_url[8] == 'v') {
                             return (
                                 <div className="home-image">              
-                                    <video autoPlay muted loop style={{width: '100%', height: '100%'}}>
+                                    <video autoPlay muted loop style={{width: '25%', height: '25%'}}>
                                         <source src={url.media_url} type="video/mp4"/>
                                     </video>
-                                </div>
+                            </div>
+                                
                             )
                         }
 
-                        return (
+                        return (                        
                             <div className="home-image">
                                 <img src={url.media_url} className="ig-image" />
                             </div>
+                    
                         )
                         
                     })}
