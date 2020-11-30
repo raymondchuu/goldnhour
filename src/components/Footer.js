@@ -18,6 +18,9 @@ const Footer = () => {
                         <a href="/policies" className="policies-link">See our policies here.</a>
                         <br/>
                         <a href="/testimonials" className="policies-link">Testimonials</a>
+                        <br/>
+                        <a href="/faq" className="policies-link">FAQ</a>
+
                     </div>
                     <div className="column-2">
                         <p className="footer-subtitle">BOOK ONLINE</p>

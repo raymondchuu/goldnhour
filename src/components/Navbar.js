@@ -10,6 +10,7 @@ import Sidebar from './HomePage/Sidebar';
 import Backdrop from './HomePage/Backdrop';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
+import Faq from './Faq.js';
 import logo from '../Media/Homepage/logo.svg';
 import { ReactComponent as ReactLogo } from '../Media/logo2.svg';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
@@ -54,6 +55,10 @@ const Navbar = (props) => {
             </nav>
         </div>
         <Switch>
+            <Route path="/faq">
+                <Faq />
+                <Footer />
+            </Route>
             <Route path="/testimonials">
                 <Testimonials />
                 <Footer />
