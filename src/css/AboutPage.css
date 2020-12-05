@@ -22,7 +22,7 @@
 .aboutpage-right {
     position: relative;
     z-index: 0;
-    bottom: 740px;
+    top: -690px;
     left: 350px;
     width: 60%;
     padding: 20px;
