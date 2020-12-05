@@ -1,0 +1,60 @@
+.aboutpage-container {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.aboutpage-entire-container {
+    background-color: #FAFAFA;
+    height: 220vh;
+}
+
+.founder {
+    margin-top: 5%;
+}
+
+.aboutpage-left {
+    float: left;
+    width: 50%;
+}
+
+.aboutpage-right {
+    margin-left: 50%;
+}
+
+.map-container {
+    display: block;
+    margin: auto;
+    width: 70%;
+    margin-bottom: 5%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .aboutpage-container {
+        width: 80%;
+    }
+
+    .map-container {
+        width: 100%;
+    }
+
+    .aboutpage-left {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .aboutpage-right {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .founder {
+        padding-bottom: 10px;
+    }
+
+    .aboutpage-entire-container {
+        height: 270vh;
+    }
+}

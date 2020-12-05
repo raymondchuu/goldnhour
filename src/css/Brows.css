@@ -13,7 +13,6 @@
     padding: 0;
 }
 
-
 .brows-products {
     display: block;
     margin: auto;
@@ -28,7 +27,7 @@
     margin: auto;
     width: 100%;
     height: 70vh;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     padding-top: 50px;
 }
 
@@ -39,7 +38,7 @@
 }
 
 .brows-desc {
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     width: 100%;
 }
 
@@ -74,7 +73,7 @@
     width: 100%;
     text-align: center;
     padding-bottom: 10%;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -88,11 +87,22 @@
         margin-bottom: 0;
     }
 
-    th {
-        padding-right: 0;
-    }
-
     .brows-booking {
         top: -700px;
+    }
+
+    .brows-pricing {
+        margin: auto;
+        width: 100%;
+        margin-top: 5%;
+    }
+    
+    .brows-pricing td {
+        padding-left: 20px;
+    }
+    
+    .brows-pricing th {
+        padding-right: 5px;
+        padding-left: 5px;
     }
 }

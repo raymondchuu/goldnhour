@@ -56,7 +56,7 @@ const Brows = () => {
                             <p className="lash-title">WAXING</p>
                             <table className="brows-pricing">
                                 <tr>
-                                    <td>BROW WAX & FILL IN</td>
+                                    <td width="100%">BROW WAX & FILL IN</td>
                                     <th className="pricing-cell">$10.00</th>
                                     <td className="duration-col">15 mins</td>
                                 </tr>

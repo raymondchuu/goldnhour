@@ -8,7 +8,7 @@ import '../css/Faq.css';
 
 const Faq = () => {
     return (
-        <div style={{backgroundColor: '#E5E5E5'}}>
+        <div style={{backgroundColor: '#FAFAFA'}}>
         <div className="faq-container">
             <div className="faq-title">
                 <p>FAQ</p>

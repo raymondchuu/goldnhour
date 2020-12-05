@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     justify-content: space-around;
+    margin-inline-end: 70px;
 }
 
 .toggle-button:focus {

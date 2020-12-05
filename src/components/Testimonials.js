@@ -46,9 +46,15 @@ const Testimonials = () => {
                 <div style={{marginTop: "80px"}}>
                     {TestimonialArr.map((test) => (
                         <div className="test">
-                            <img src={quote} className="quote-image"/>
-                            <p className="content">{test.content}</p>
-                            <p className="test-name">{test.name}</p>
+                            <img src={quote} className="quote-image" style={{width: '50px', height: '50px'}}/>
+                            <div style={{ height: '100%'}}>
+                                <div className="content">
+                                    <p>{test.content}</p>
+                                </div>
+                                <div className="test-name">
+                                    <p className>{test.name}</p>
+                                </div>
+                            </div>
                         </div>
                     ))}
 

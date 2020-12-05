@@ -3,12 +3,13 @@
     left: 0;
     height: 100vh;
     background-color: #FFF;
-    width: 50%;
+    width: 60%;
     z-index: 100;
     position: fixed;
     box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.5);
     transform: translateX(-110%);
     transition: transform 0.3s ease-out;
+    padding-top: 10%;
 }
 
 .sidebar.show {
@@ -22,12 +23,12 @@
     justify-content: center;
     text-align: left;
     height: 100%;
-    padding-right: 40px;
+    text-align: center;
 }
 
 .sidebar ul li {
-    margin-bottom: 10%;
-    font-size: 30px;
+    margin-bottom: 3%;
+    font-size: 20px;
 }
 
 .sidebar ul li a {
@@ -41,6 +42,22 @@
 .sidebar ul li a:hover {
     color: #AE3B15;
     border-bottom: 1px solid #AE3B15;
+}
+
+.sidebar-btn-container {
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.sidebar-book-btn {
+    display: block;
+    margin: auto;
+    border: none;
+    color: white;
+    padding: 20px 5px;
+    background-color: #C47C4F;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1000px) {

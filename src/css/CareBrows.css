@@ -1,0 +1,20 @@
+ul {
+    list-style: none;
+}
+.carebrows-ul li::before {
+    content: "\2022";
+    color: #B5603F;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
+.bold-font {
+    font-weight: bold;
+}
+
+.care-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+}

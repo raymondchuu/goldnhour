@@ -11,7 +11,7 @@ const Header = () => {
             <video autoPlay muted loop className="header-video">
                 <source src={video} type="video/mp4" />
             </video>
-            <div style={{ top: '110vh', position: 'absolute', zIndex: 5, margin: 'auto', width: '100%'}}>
+            <div style={{ top: '90vh', position: 'absolute', zIndex: 5, margin: 'auto', width: '100%'}}>
                 <img src={arrow} />
             </div>
             <div id="homebtn"></div>

@@ -15,11 +15,11 @@ const Footer = () => {
                     <div className="column-1">
                         <p className="footer-subtitle">OUR MISSION</p>
                         <p>GOLDN HOUR is a beauty studio that creates opportunities for those to express their most authentic self by enhancing their natural beauty through the golden experience. </p>
-                        <a href="/policies" className="policies-link">See our policies here.</a>
+                        <a href="/policies" className="policies-link" target="_blank">See our policies here.</a>
                         <br/>
                         <a href="/testimonials" className="policies-link">Testimonials</a>
                         <br/>
-                        <a href="/faq" className="policies-link">FAQ</a>
+                        <a href="/faq" className="policies-link" target="_blank">FAQ</a>
 
                     </div>
                     <div className="column-2">

@@ -4,7 +4,7 @@ import '../css/Policies.css';
 
 const Policies = () => {
     return (
-        <div style={{backgroundColor: '#E5E5E5', width: '100%', paddingBottom: '5%'}}>
+        <div style={{backgroundColor: '#FAFAFA', width: '100%', paddingBottom: '5%'}}>
             <div className="policies-header">
                 {/*background image*/}
             </div>

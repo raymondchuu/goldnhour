@@ -1,0 +1,19 @@
+.images-container {
+    display: block;
+    margin: auto;
+    width: 80%;
+    background-color: #FAFAFA;
+    height: 110vh;
+}
+
+.display-img {
+    float: left;
+    width: 25%;
+    margin-bottom: 3%;
+}
+
+.inner-img {
+    display: block;
+    margin: auto;
+    width: 90%;
+}

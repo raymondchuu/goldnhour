@@ -29,7 +29,7 @@
 
 ul {
     list-style: none;
-  }
+}
   
 .policy-ul li::before {
     content: "\2022";

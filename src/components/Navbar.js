@@ -9,9 +9,14 @@ import ToggleButton from './HomePage/ToggleButton';
 import Sidebar from './HomePage/Sidebar';
 import Backdrop from './HomePage/Backdrop';
 import Footer from './Footer';
+import Pmu from './ServicesPage/Pmu';
+import Training from './Training';
 import Testimonials from './Testimonials';
 import Faq from './Faq.js';
+import CareBrows from './CareBrows';
+import CareLashes from './CareLashes';
 import logo from '../Media/Homepage/logo.svg';
+import About from './AboutPage';
 import { ReactComponent as ReactLogo } from '../Media/logo2.svg';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
 import Preloader from './Preloader';
@@ -33,7 +38,7 @@ const Navbar = (props) => {
             {toggle ? <Backdrop click={handleBackdrop}/> : ""}
         <div className="navbar">
             <figure className="logo"> 
-                <img src={logo} />
+                <a href="/"><img src={logo} /></a>
             </figure>
             <nav className="navigation">
                 <div className="toggle">
@@ -41,20 +46,53 @@ const Navbar = (props) => {
                 </div>
 
                 <ul>
-                    <li><a href='/home' style={window.location.pathname == '/home' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>HOME</a></li>
+                    <li><a href='/' style={window.location.pathname == '/' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>HOME</a></li>
+                    <li><a href='/about' style={window.location.pathname == '/about' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>ABOUT</a></li>
                     <div className="dropdown">
-                        <li><a href="" className="service-btn" style={(window.location.pathname == '/services/brows' || window.location.pathname == '/services/lashes') ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>SERVICES</a></li>
+                        <li><a href="" className="service-btn" style={(window.location.pathname == '/services/brows' || window.location.pathname == '/services/lashes' || window.location.pathname == '/services/pmu' || window.location.pathname == '/services/training') ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>SERVICES</a></li>
                         <div className="dropdown-content">
-                            <li><a href='/services/brows' style={window.location.pathname == '/services/brows' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>BROWS</a></li>
-                            <li><a href='/services/lashes' style={window.location.pathname == '/services/lashes' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>LASHES</a></li>
+                            <li><a href='/services/brows' style={window.location.pathname == '/services/brows' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>Brows</a></li>
+                            <li><a href='/services/pmu' style={window.location.pathname == '/services/pmu' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>PMU</a></li>
+                            <li><a href='/services/lashes' style={window.location.pathname == '/services/lashes' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>Lashes</a></li>
+                            <li><a href='/services/training' style={window.location.pathname == '/services/training' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>Training</a></li>
                         </div>
                     </div>
+                    <li><a href='/policies' style={window.location.pathname == '/policies' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}} >POLICIES</a></li>
+                    <div className="dropdown2">
+                        <li><a className="service-btn" style={(window.location.pathname == '/care/brows' || window.location.pathname == '/care/lashes') ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>PRE/AFTER CARE</a></li>
+                        <div className="dropdown-content2">
+                            <li><a href='/care/brows' style={window.location.pathname == '/care/brows' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>Brows</a></li>
+                            <li><a href='/care/lashes' style={window.location.pathname == '/care/lashes' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>Lashes</a></li>
+                        </div>
+                    </div>
+                    <li><a href='/faq' style={window.location.pathname == '/faq' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>FAQ</a></li>
+                    <li><a href='/testimonials' style={window.location.pathname == '/testimonials' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>TESTIMONIALS</a></li>
 
-                    <li><a href="/book" style={window.location.pathname == '/book' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15" } : {}}>BOOK</a></li>
+                    <button href="/book" className="navbar-book-btn">BOOK</button>
                 </ul>
             </nav>
         </div>
         <Switch>
+            <Route path='/care/lashes'>
+                <CareLashes />
+                <Footer />
+            </Route>
+            <Route path='/care/brows'>
+                <CareBrows />
+                <Footer/>
+            </Route>
+            <Route path='/services/training'>
+                <Training />
+                <Footer />
+            </Route>
+            <Route path ='/services/pmu'>
+                <Pmu />
+                <Footer />
+            </Route>
+            <Route path='/about'>
+                <About />
+                <Footer />
+            </Route>
             <Route path="/faq">
                 <Faq />
                 <Footer />
@@ -82,13 +120,10 @@ const Navbar = (props) => {
                 <Footer />
 
             </Route>
-            <Route path="/home">
+            <Route path="/">
                 <Homepage />
                 <Footer />
 
-            </Route>
-            <Route path="/">
-                <Preloader />
             </Route>
         </Switch>
         </Router>

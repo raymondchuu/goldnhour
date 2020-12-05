@@ -1,12 +1,14 @@
 .about {
-    width: 100%;
-    height: 90vh;
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 70vh;
     background-color: #FFF;
     margin-bottom: 3%;
     margin-top: 5%;
-    background-color: #E5E5E5;
+    background-color: #FAFAFA;
     padding-top: 5%;
-
+    border-bottom: 1px solid lightgray;
 }
 
 .about-title {
@@ -24,7 +26,7 @@
 }
 
 .right-column-about{
-    margin-left: 48%;
+    margin-left: 40%;
     height: 100%;
     padding: 3%;
     padding-top: 20px;
@@ -32,11 +34,9 @@
 }
 
 .background-image {
-    /*background-image: url('../Media/Homepage/our-story.png');
+    background-image: url('../Media/Homepage/our-story.png');
     background-repeat: no-repeat;
-    background-size: cover;*/
-    height: 100%;
-    width: 100%;
+    background-size: cover;
 }
 
 .slogan {
@@ -56,8 +56,92 @@
     margin-top: 20px;
 }
 
+.gift-vouchers {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 60vh;
+    background-color: #FBF1E0;
+}
 
-@media only screen and (max-width: 1000px) {
+.about-test-container {
+    width: 90%;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10%;
+    height: 60vh;
+}
+
+.about-test {
+    position: relative;
+    float: left;
+    width: 46%;
+    background-color: white;
+    box-shadow: 2px 0px 7px rgba(0, 0, 0, 0.5);
+    margin: 20px;
+    padding: 30px;
+    height: 400px;
+}
+
+.about-services {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+    height: 80vh;
+    border-bottom: 1px solid lightgray;
+}
+
+.about-service-block {
+    width: 33%;
+    float: left;
+}
+
+.about-book-btn {
+    border: double;
+    color: white;
+    padding: 10px 80px;
+    background-color: #C47C4F;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.about-book-btn:hover {
+    background-color: #AE3B15;
+}
+
+.left-gift {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.right-gift {
+    margin-left: 50%;
+    padding-top: 8%;
+    padding-left: 5%;
+}
+
+.center-image {
+    display: block;
+    margin: auto;
+    width: 90%;
+}
+
+.homeblock:hover {
+    transition: 1s all;
+}
+
+.home-view-all {
+    color: black;
+}
+
+.home-view-all:hover {
+    color: #AE3B15
+}
+
+@media only screen and (max-width: 1400px) {
     .left-column-about {
         display: block;
         margin: auto;
@@ -72,7 +156,7 @@
     }
 
     .about {
-        margin-bottom: 1000px;
+        margin-bottom: 500px;
     }
 
     .about {
@@ -82,6 +166,62 @@
     .background-image-container {
         display: block;
         margin: auto;
+    }
 
+    .gift-vouchers {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .gift-voucher-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-test-container {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 150vh;
+        margin-bottom: 30vh;
+    }
+
+    .about-test {
+        display: block;
+        margin: auto;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .left-gift {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 50vh;
+    }    
+    
+    .right-gift {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 50vh;
+        padding: 20px;
+    }
+
+    .about-services {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 100vh;
+        margin-top: 20vh;
+    }
+
+    .about-service-block {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 70vh;
     }
 }

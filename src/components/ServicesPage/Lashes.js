@@ -132,7 +132,7 @@ const Lashes = () => {
                         </div>
                     ))}
 
-                    <div className="product-container" style={{backgroundColor: '#E5E5E5'}}>
+                    <div className="product-container" style={{backgroundColor: '#FAFAFA'}}>
                         <div className="sub-block">
                         <div className="left-column-services"> 
                             <div>

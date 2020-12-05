@@ -1,0 +1,16 @@
+.training-left {
+    float: left;
+    width: 50%;
+}
+
+.training-right {
+    margin-left: 50%;
+}
+
+.training-container a {
+    color: #AE3B15;
+}
+
+@media only screen and (max-width: 1400px) {
+
+}
