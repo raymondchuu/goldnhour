@@ -15,6 +15,7 @@ import Testimonials from './Testimonials';
 import Faq from './Faq.js';
 import CareBrows from './CareBrows';
 import CareLashes from './CareLashes';
+import GiftVouchers from './GiftVouchers';
 import logo from '../Media/Homepage/logo.svg';
 import About from './AboutPage';
 import { ReactComponent as ReactLogo } from '../Media/logo2.svg';
@@ -73,6 +74,10 @@ const Navbar = (props) => {
             </nav>
         </div>
         <Switch>
+            <Route path='/giftvouchers'>
+                <GiftVouchers />
+                <Footer />
+            </Route>
             <Route path='/care/lashes'>
                 <CareLashes />
                 <Footer />

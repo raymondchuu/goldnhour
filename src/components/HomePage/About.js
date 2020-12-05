@@ -75,7 +75,7 @@ const About = () => {
                     <img src={Giftvoucher} className="gift-voucher-image" style={{height: '100%'}} />
                 </div>
                 <div className="right-gift">
-                    <p style={{fontSize: '36px', color: '#AE3B15'}}>GIFT VOUCHERS</p>
+                    <p style={{fontSize: '36px', color: '#AE3B15'}}><a href='/giftvouchers'>GIFT VOUCHERS</a></p>
                     <p style={{fontSize: '36px', color: '#292929'}}>Send a gift voucher to your loved ones or buy one for yourself!</p>
                 </div>
             </div>

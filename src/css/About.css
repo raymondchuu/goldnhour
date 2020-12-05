@@ -141,6 +141,10 @@
     color: #AE3B15
 }
 
+.right-gift a {
+    color: #AE3B15;
+}
+
 @media only screen and (max-width: 1400px) {
     .left-column-about {
         display: block;

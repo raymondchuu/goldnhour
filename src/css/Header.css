@@ -67,7 +67,6 @@
     }
 
     .header-video {
-        left: -240vh;
-        top: -30vh;
+        left: 1000px;
     }
 }

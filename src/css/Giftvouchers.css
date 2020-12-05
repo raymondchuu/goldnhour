@@ -1,0 +1,53 @@
+.gift-entire-container {
+    background-color: #FAFAFA;
+    width: 100%;
+    margin-top: 88px;
+}
+
+.gift-content {
+    margin-top: 5%;
+}
+
+.gift-inner-container {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+.gift-left {
+    float: left;
+    width: 50%;
+}
+
+.gift-right {
+    margin-left: 50%;
+}
+
+.gift-right a {
+    color: #AE3B15;
+}
+
+.gift-inner-img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .gift-left {
+        display: block;
+        margin: auto;
+        width: 100%
+    }
+
+    .gift-right {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .gift-inner-img {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
