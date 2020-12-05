@@ -3,7 +3,7 @@ import '../css/CareBrows.css';
 
 const CareBrows = () => {
     return (
-        <div>
+        <div style={{backgroundColor: '#FAFAFA', paddingBottom: '5%'}}>
         <div className="policies-header">
         {/*background image*/}
         </div>

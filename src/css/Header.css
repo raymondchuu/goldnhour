@@ -1,18 +1,4 @@
-.header-image {
-    width: 100%;
-    height: 100vh;
-    text-align: center;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.header-video {
-    top: 0;
-    left: 0;
-    min-width: 100%; 
-    min-height: 100%;
-}
-
+/* 
 .app-bar {
     top: 0;
     left: 0;
@@ -59,14 +45,40 @@
     background-color: #FFF;
     color: #000;
     text-decoration: none;
+} */
+
+.header-image {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+
 }
+
+.header-video {
+ 
+    position: absolute; 
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: 0;
+    background-size: cover;
+    overflow-x: hidden;
+    right: 0;
+    bottom: 0; 
+
+}
+
 
 @media only screen and (max-width: 1200px) {
     .header-image {
-        width: 100%;
+        display: none;
     }
 
     .header-video {
-        left: 1000px;
+
     }
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const CareLashes = () => {
     return (
-        <div>
+        <div style={{backgroundColor: '#FAFAFA', paddingBottom: '5%'}}>
             <div className="policies-header">
             {/*background image*/}
             </div>

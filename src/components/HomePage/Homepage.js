@@ -8,7 +8,7 @@ import '../../css/Homepage.css';
 const Homepage = () => {
 
     return (
-        <div style={{backgroundColor: '#FAFAFA'}}>
+        <div style={{backgroundColor: '#FAFAFA', overflowX: 'hidden'}}>
             <Header />
             <div className="homepage-container">
                 <About />

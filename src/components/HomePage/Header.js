@@ -8,7 +8,7 @@ import '../../css/Header.css';
 const Header = () => {
     return (
         <div className="header-image">
-            <video autoPlay muted loop className="header-video">
+            <video autoPlay muted loop playsInline className="header-video">
                 <source src={video} type="video/mp4" />
             </video>
             <div style={{ top: '90vh', position: 'absolute', zIndex: 5, margin: 'auto', width: '100%'}}>

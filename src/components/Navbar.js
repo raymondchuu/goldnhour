@@ -20,8 +20,7 @@ import logo from '../Media/Homepage/logo.svg';
 import About from './AboutPage';
 import { ReactComponent as ReactLogo } from '../Media/logo2.svg';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
-import Preloader from './Preloader';
-const Navbar = (props) => {
+const Navbar = () => {
 
     const [toggle, setToggle] = useState(false);
 

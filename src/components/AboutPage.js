@@ -1,6 +1,6 @@
 import React from 'react';
 import Map from '../Media/aboutmap.png';
-import profile from '../Media/Homepage/self-portrait.jpg';
+import profile from '../Media/aboutpage-profile.png';
 import '../css/AboutPage.css';
 
 const AboutPage = () => {
@@ -27,11 +27,25 @@ const AboutPage = () => {
 
                     <div className="founder">
                         <div className="aboutpage-left">
-                            <img src={profile}/>
+                            <div className="about-profile-image">
+                                <img src={profile} style={{width: '100%'}}/>
+                            </div>
                         </div>
                         <div className="aboutpage-right">
-                            <p style={{fontSize: '24px', color: '#AE3B15'}}>Michelle Le</p>
-                            <p>Founder</p>
+                            <p style={{fontSize: '24px', color: '#AE3B15', fontWeight: 'bolder'}}>Michelle Le</p>
+                            <p>Michelle, founder of Goldn Hour, had started her beauty career in late 2016. She grew up in a Nail Salon as her immigrant parents adapted and grown to operate a successful salon of their own for over 20+ years. Subsequently, she developed her own creativity and desire to make everyone look and feel beautiful. She has been lashing for over 4 years and she continues to broaden her skills in becoming a permanent makeup artist.  </p>
+                            <p>After continuous success, Michelle decided to embark towards the educational route and share her knowledge in this ever-changing industry. With her high attention to detail and experience, she has created hands-on training for students to grow their confidence and receive in-the-moment coaching.</p>
+                            <br/>
+                            <p style={{textDecoration: 'underline', marginBottom: '0'}}>Credentials</p>
+                            <p>Lia Lash Pro - Classic <br/>
+                                Lash Artisan - Lash Lift + Tint <br/>
+                                Lash Girls Pro - Volume<br/>
+                                Lia Lash Pro - Volume<br/>
+                                Shay Danielle Academy - Brow Lamination <br/>
+                                Nala - 2018 Nominee for Newcomer of the Year award <br/>
+                                Lash Affair - Dec 2017 Lash artist of the month <br/>
+                                Brows by Linnie - Powder Ombre Brows <br/>
+                                Suzie Mcintosh - Microblading</p>
                         </div>
                     </div>
                 </div>
