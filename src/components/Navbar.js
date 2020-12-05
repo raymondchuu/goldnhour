@@ -68,8 +68,9 @@ const Navbar = (props) => {
                     </div>
                     <li><a href='/faq' style={window.location.pathname == '/faq' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>FAQ</a></li>
                     <li><a href='/testimonials' style={window.location.pathname == '/testimonials' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>TESTIMONIALS</a></li>
-
-                    <button href="/book" className="navbar-book-btn">BOOK</button>
+                    <form action="https://goldnhour.as.me/schedule.php">
+                        <button type="submit" className="navbar-book-btn">BOOK</button>
+                    </form>
                 </ul>
             </nav>
         </div>

@@ -38,7 +38,9 @@ const Sidebar = (props) => {
 
 
                 <div className="sidebar-btn-container">
+                    <form action="https://goldnhour.as.me/schedule.php">
                     <button href="/book" className="sidebar-book-btn">BOOK</button>
+                    </form>
 
                 </div>
 

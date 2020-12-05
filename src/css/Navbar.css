@@ -149,7 +149,9 @@ nav {
 }
 
 .navbar-book-btn:hover {
+    color: white;
     background-color: #AE3B15;
+    text-decoration: none;
 }
 
 @media only screen and (max-width: 1400px) {
