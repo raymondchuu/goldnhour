@@ -9,7 +9,6 @@ const Homepage = () => {
 
     return (
         <div style={{backgroundColor: '#FAFAFA', overflowX: 'hidden'}}>
-            <Header />
             <div className="homepage-container">
                 <About />
                 <Images />

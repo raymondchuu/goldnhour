@@ -18,8 +18,10 @@ import CareLashes from './CareLashes';
 import GiftVouchers from './GiftVouchers';
 import logo from '../Media/Homepage/logo.svg';
 import About from './AboutPage';
+import Preloader from './Preloader';
 import { ReactComponent as ReactLogo } from '../Media/logo2.svg';
 import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { Home } from '@material-ui/icons';
 const Navbar = () => {
 
     const [toggle, setToggle] = useState(false);
@@ -38,7 +40,7 @@ const Navbar = () => {
             {toggle ? <Backdrop click={handleBackdrop}/> : ""}
         <div className="navbar">
             <figure className="logo"> 
-                <a href="/"><img src={logo} /></a>
+                <a href="/home"><img src={logo} /></a>
             </figure>
             <nav className="navigation">
                 <div className="toggle">
@@ -46,7 +48,7 @@ const Navbar = () => {
                 </div>
 
                 <ul>
-                    <li><a href='/' style={window.location.pathname == '/' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>HOME</a></li>
+                    <li><a href='/home' style={window.location.pathname == '/' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>HOME</a></li>
                     <li><a href='/about' style={window.location.pathname == '/about' ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>ABOUT</a></li>
                     <div className="dropdown">
                         <li><a href="" className="service-btn" style={(window.location.pathname == '/services/brows' || window.location.pathname == '/services/lashes' || window.location.pathname == '/services/pmu' || window.location.pathname == '/services/training') ? {color: '#AE3B15', borderBottom: "1px solid #AE3B15"} : {}}>SERVICES</a></li>
@@ -125,10 +127,12 @@ const Navbar = () => {
                 <Footer />
 
             </Route>
-            <Route path="/">
+            <Route path='/home'>
                 <Homepage />
                 <Footer />
-
+            </Route>
+            <Route path="/">
+                <Preloader />
             </Route>
         </Switch>
         </Router>

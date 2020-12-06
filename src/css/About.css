@@ -63,7 +63,7 @@
     width: 100%;
     display: block;
     margin: auto;
-    height: 60vh;
+    height: 70vh;
     background-color: #FBF1E0;
 }
 
@@ -151,7 +151,7 @@
     color: #AE3B15;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1000px) {
     .left-column-about {
         display: block;
         margin: auto;
@@ -195,7 +195,7 @@
         display: block;
         margin: auto;
         width: 100%;
-        height: 280vh;
+        height: 150vh;
         margin-bottom: 30vh;
     }
 
@@ -216,7 +216,7 @@
         display: block;
         margin: auto;
         width: 100%;
-        height: 50vh;
+        height: 40vh;
     }    
     
     .right-gift {
@@ -231,14 +231,15 @@
         display: block;
         margin: auto;
         width: 100%;
-        height: 100vh;
+        height: 150vh;
         margin-top: 20vh;
     }
 
     .about-service-block {
         display: block;
         margin: auto;
-        width: 100%;
-        height: 70vh;
+        width: 50%;
+        height: 30%;
+        margin-bottom: 5%;
     }
 }

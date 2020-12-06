@@ -1,4 +1,4 @@
-/* 
+
 .app-bar {
     top: 0;
     left: 0;
@@ -45,7 +45,7 @@
     background-color: #FFF;
     color: #000;
     text-decoration: none;
-} */
+} 
 
 .header-image {
     display: block;
@@ -73,7 +73,7 @@
 }
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000px) {
     .header-image {
         display: none;
     }

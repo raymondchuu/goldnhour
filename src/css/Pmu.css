@@ -49,7 +49,7 @@
     margin-top: 10%;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1000px) {
     .pmu-entire-container {
         height: 450vh;
     }

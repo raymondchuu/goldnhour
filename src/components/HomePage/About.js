@@ -122,7 +122,7 @@ const About = () => {
             <div className="gift-vouchers">
                 <div className="left-gift">
                     <div className="gift-inner-image">
-                    <img src={Giftvoucher} className="gift-voucher-image" style={{height: '100%'}} />
+                        <img src={Giftvoucher} className="gift-voucher-image" style={{height: '100%'}} />
                     </div>
                 </div>
                 <div className="right-gift">
