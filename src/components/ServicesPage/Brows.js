@@ -2,6 +2,7 @@ import React from 'react';
 import image1 from '../../Media/Brows/image1.jpg';
 import image2 from '../../Media/Brows/image2.jpg';
 import image3 from '../../Media/Brows/image3.jpg';
+import image4 from '../../Media/Brows/image4.png';
 import '../../css/Brows.css';
 
 const Brows = () => {
@@ -21,7 +22,7 @@ const Brows = () => {
                     <div className="brows-subblock">
                     <div className="left-column-services">
                         <div>
-                            <img src={image1} className="product-image" />
+                            <img src={image4} className="product-image" />
                         </div>
                     </div>
                     <div className="right-column-services">
@@ -91,7 +92,7 @@ const Brows = () => {
                     </div>
                 </div>
 
-                <div className="brows-products-grey">
+{/*                 <div className="brows-products-grey">
                     <div className="brows-subblock">
                         <div className="left-column-services">
                             <div>
@@ -106,7 +107,7 @@ const Brows = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="brows-booking">
                     <p className="lash-title">READY TO BOOK?</p>
