@@ -30,7 +30,7 @@
 
 .pmu-aftersection {
     clear: both;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-top: 10%;
 }
 
@@ -50,6 +50,32 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .pmu-left {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .pmu-right {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .pmu-img-container {
+        width: 40%;
+    }
+
+    .pmu-aftersection {
+        margin-left: 0;
+    }
+
+    .pmu-entire-container {
+        height: 360vh;
+    }
+}
+
+@media only screen and (max-width: 700px) {
     .pmu-entire-container {
         height: 450vh;
     }
@@ -71,7 +97,7 @@
     }
 
     .pmu-img-container {
-        width: 100%;
+        width: 60%;
     }
     .pmu-aftersection {
         margin-left: 0;

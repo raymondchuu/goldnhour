@@ -15,7 +15,7 @@ const Pmu = () => {
                         <p className="lash-title">PERMANENT BROWS</p>
                         <div className="lash-div"></div>
                     </div>
-                    <div style={{ margin: 'auto'}}>
+                    <div className="pmu-opb-container">
                         <div className="pmu-left">
                             <div className="pmu-img-container">
                                 <img src={image1} className="pmu-image1"/>
@@ -33,7 +33,7 @@ const Pmu = () => {
 
                     <div style={{clear: 'both', marginTop: '15%'}}>
                         <div className="pmu-left">
-                            <div style={{display: 'block', margin: 'auto', width: '65%'}}>
+                            <div className="pmu-img-container">
                                 <img src={image2} style={{width: '100%'}} />
                             </div>
                         </div>

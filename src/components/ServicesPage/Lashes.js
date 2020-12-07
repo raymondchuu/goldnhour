@@ -91,7 +91,7 @@ const Lashes = () => {
                         <div className={product.even ? "product-container" : "product-container-even"}>
                             <div className="sub-block">
                             <div className="left-column-services">
-                                <div>
+                                <div className="lash-inner-img">
                                     <img className="product-image" src={product.image} />
                                 </div>
                             </div>
@@ -135,7 +135,7 @@ const Lashes = () => {
                     <div className="product-container" style={{backgroundColor: '#FAFAFA'}}>
                         <div className="sub-block">
                         <div className="left-column-services"> 
-                            <div>
+                            <div className="lash-inner-img">
                                 <img src={image4} className="product-image" />
                             </div>
                         </div>

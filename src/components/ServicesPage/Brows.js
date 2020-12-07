@@ -20,12 +20,12 @@ const Brows = () => {
 
                 <div className="brows-products-grey">
                     <div className="brows-subblock">
-                    <div className="left-column-services">
-                        <div>
-                            <img src={image4} className="product-image" />
+                    <div className="brows-left">
+                        <div className="brows-inner-img">
+                            <img src={image4} className="product-image" style={{width: '100%', height: '50%'}} />
                         </div>
                     </div>
-                    <div className="right-column-services">
+                    <div className="brows-right">
                         <div>
                             <p className="lash-title">LAMINATION</p>
                             <p>This brow lift service includes an aftercare kit. This service extends the brow to 1/3rd or half the width, adding beautiful, smooth dimension and colour to sparse brows. It can be customized from a bold editorial look to a natural feathered look. Lasts up to 4-6 weeks (until brow grows out). </p>
@@ -47,12 +47,12 @@ const Brows = () => {
 
                 <div className="brows-products">
                     <div className="brows-subblock">
-                    <div className="left-column-services">
-                        <div>
-                            <img src={image2} className="product-image" />
+                    <div className="brows-left">
+                        <div className="brows-inner-img">
+                            <img src={image2} className="product-image" style={{width: '100%'}} />
                         </div>
                     </div>
-                    <div className="right-column-services">
+                    <div className="brows-right">
                         <div>
                             <p className="lash-title">WAXING</p>
                             <table className="brows-pricing">

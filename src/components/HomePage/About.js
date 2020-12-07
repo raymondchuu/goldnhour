@@ -16,7 +16,7 @@ const About = () => {
     const [brows, hoverBrows] = useState(HomeBrows);
     const [training, hoverTraining] = useState(HomeTraining);
     return (
-        <div>
+        <div style={{position: 'relative'}}>
             <div className="about" style={{marginTop: '88px'}}>
 {/*                 <div className="left-column-about">
                     <div className="background-image-container">
@@ -43,10 +43,10 @@ const About = () => {
 
             <div className="about-services">
                 <p style={{fontSize: '24px', color: '#292929', textAlign: 'center', fontWeight: 'bold'}}>OUR SERVICES</p>
-                <div>
+                <div className="about-service-inner">
                     <div className="about-service-block">
                         <div className="center-image"> 
-                            <a href='/services/lashes'><img src={lash} className="homeblock" style={{width: '100%', height: '100%'}} 
+                            <a href='/services/lashes'><img src={lash} className="homeblock" style={{width: '100%', height: 'auto'}} 
                                 onMouseEnter={() => {
                                     hoverLash(LashHover)
                                 }}
@@ -88,8 +88,8 @@ const About = () => {
             <div className="about-test-container">
                 <p style={{fontSize: '24px', paddingBottom: '2%', fontWeight: 'bold', marginTop: '5%'}}>WHAT PEOPLE SAY</p>     
 
-                <div style={{display: 'block', margin: 'auto', width: '80%', height: '100%'}}>
-                    <div className="about-test">
+                <div className="about-test-inner" >
+                    <div className="about-test-left">
                         <img src={quote} className="quote-image" style={{width: '50px', height: '50px', left: '50px'}}/>
                         <div style={{ height: '100%'}}>
                             <div className="content">
@@ -101,7 +101,7 @@ const About = () => {
                         </div>
                     </div>
 
-                    <div className="about-test">
+                    <div className="about-test-right">
                         <img src={quote} className="quote-image" style={{width: '50px', height: '50px', left: '50px'}}/>
                         <div style={{ height: '100%'}}>
                             <div className="content">
@@ -112,24 +112,27 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <p style={{fontSize: '24px', fontWeight: 'bold', paddingTop: '3%'}}><a href='/testimonials' target="_blank" className="home-view-all">VIEW ALL</a></p>
+                    <div className="about-view-all">
+                    </div>
 
                 </div>
+                <p style={{fontSize: '24px', fontWeight: 'bold', paddingTop: '3%'}}><a href='/testimonials' target="_blank" className="home-view-all">VIEW ALL</a></p>
 
             </div>
 
 
             <div className="gift-vouchers">
-                <div className="left-gift">
-                    <div className="gift-inner-image">
-                        <img src={Giftvoucher} className="gift-voucher-image" style={{width: '100%'}} />
+                    <div className="left-gift">
+                        <div className="gift-inner-image">
+                            <img src={Giftvoucher} className="gift-voucher-image" style={{width: '100%'}} />
+                        </div>
                     </div>
-                </div>
-                <div className="right-gift">
-                    <p style={{fontSize: '36px', color: '#AE3B15', fontWeight: 'bold'}}><a href='/giftvouchers'>GIFT VOUCHERS</a></p>
-                    <p style={{fontSize: '36px', color: '#292929'}}>Send a gift voucher to your loved ones</p>
-                </div>
+                    <div className="right-gift">
+                        <p style={{fontSize: '36px', color: '#AE3B15', fontWeight: 'bold'}}><a href='/giftvouchers'>GIFT VOUCHERS</a></p>
+                        <p style={{fontSize: '36px', color: '#292929'}}>Send a gift voucher to your loved ones</p>
+                    </div>
             </div>
+
         </div>
     )
 }

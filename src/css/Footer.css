@@ -73,7 +73,7 @@ p {
 .book-btn {
 font-size: 24px;
 display:inline-block;
-padding:0.5em 3.5em;
+padding: 5% 10%;
 border:2px solid #fff;
 margin:0 5px 0.3em 0;
 border-radius:0.12em;
@@ -87,6 +87,7 @@ background-color: #C47C4F;
 white-space: nowrap;
 border: double;
 cursor: pointer;
+width: 100%;
 }
 
 .book-btn:hover {
@@ -145,6 +146,7 @@ text-decoration: none;
         margin: auto;
         width: 100%;
         height: 250px;
+        margin-bottom: 50px;
     }
 
     .column-2 {
@@ -163,8 +165,8 @@ text-decoration: none;
     }
 
     .book-btn {
-        width: 100%;
+        width: 60%;
         margin: auto;
-        padding: 0.5em 3.0em;
+        padding: 2% 6%;
     }
 }

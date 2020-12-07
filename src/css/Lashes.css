@@ -152,9 +152,41 @@ border-collapse: collapse;
       text-align: center;
       padding-bottom: 10%;
       background-color: #FAFAFA;
-  }
+    }
+
+    .lash-inner-img {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
 
   @media only screen and (max-width: 1000px) {
+    .left-column-services {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .lash-inner-img {
+        width: 50%;
+    }
+
+    .right-column-services {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .product-container {
+        height: 120vh;
+    }
+
+    .product-container-even {
+        height: 120vh;
+    }
+}
+
+  @media only screen and (max-width: 800px) {
     .left-column-services {
         display: block;
         margin: auto;

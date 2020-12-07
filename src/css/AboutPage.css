@@ -6,12 +6,12 @@
 
 .aboutpage-entire-container {
     background-color: #FAFAFA;
-    height: 260vh;
+    height: 280vh;
 }
 
 .founder {
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 20%;
 }
 
@@ -24,7 +24,7 @@
     z-index: 0;
     top: -690px;
     left: 350px;
-    width: 60%;
+    width: 70%;
     padding: 20px;
     background-color: white;
     opacity: 0.8;
@@ -61,21 +61,22 @@
         margin: auto;
         width: 100%;
         opacity: 1;
-        left: 0;
-        bottom: 0;
         background-color: #FAFAFA;
+        top: 0;
+        left: 0;
     }
 
     .founder {
         padding-bottom: 10px;
         clear: both;
+        height: 160vh;
     }
 
     .about-profile-image {
-        width: 100%;
+        width: 60%;
     }
 
     .aboutpage-entire-container {
-        height: 420vh;
+        height: 460vh;
     }
 }

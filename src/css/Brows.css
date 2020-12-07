@@ -29,6 +29,7 @@
     height: 80vh;
     background-color: #FAFAFA;
     padding-top: 50px;
+    border: 1px solid red;
 }
 
 .brows-subblock {
@@ -76,16 +77,31 @@
     background-color: #FAFAFA;
 }
 
+.brows-left {
+    float: left;
+    width: 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    border: 1px solid green;
+}
+
+.brows-right {
+    margin-left: 40%;
+    padding-left: 50px;
+    height: 50vh;
+}
 
 
-@media only screen and (max-width: 1000px) {
+
+@media only screen and (max-width: 1300px) {
     .brows-products {
-        height: 1000px;
+        height: 900px;
         margin-bottom: 0;
     }
 
     .brows-products-grey {
-        height: 1000px;
+        height: 900px;
         margin-bottom: 0;
     }
 
@@ -106,5 +122,44 @@
     .brows-pricing th {
         padding-right: 5px;
         padding-left: 5px;
+    }
+
+    .brows-inner-img {
+        display: block;
+        margin: auto;
+        width: 40%;
+    }
+    
+    .brows-left {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+
+    .brows-right {
+        margin-left: 0;
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding-left: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1300px) {
+    .brows-left {
+        width: 100%;
+    }
+
+    .brows-inner-img {
+        width: 100%;
+    }
+
+    .brows-products-grey {
+        height: 1100px;
+    }
+
+    .brows-products {
+        height: 1100px;
     }
 }
